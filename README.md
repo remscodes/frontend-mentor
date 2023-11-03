@@ -10,6 +10,7 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
 
 - Newbie
   - [QR code component](./newbie/qr-code-component) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/qr-code-component))
+  - [Results summary component](./newbie/results-summary-component) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/results-summary-component))
 - Junior
 - Intermediate
 - Advanced
