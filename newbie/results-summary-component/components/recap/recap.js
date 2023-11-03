@@ -23,7 +23,7 @@ export class Recap extends HTMLElement {
         <span>${this.category}</span>
   
         <div class="recap__score">
-          <span class="recap__score-current">${this.score} <span class="recap__score-total">/ 100</span></span>
+          <span class="recap__score-current">${this.score} &nbsp;<span class="recap__score-total">/ 100</span></span>
         </div>
       </div>
     `;

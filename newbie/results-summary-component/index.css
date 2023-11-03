@@ -23,11 +23,27 @@ main {
   flex-direction: column;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  flex: 1;
+}
+
+.panel {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 10px 20px 30px 5px hsla(241, 100%, 89%, 0.35);
+}
+
 .attribution {
   position: fixed;
   bottom: 10px;
   left: 10px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 2px;
 }
@@ -44,30 +60,20 @@ main {
   font-weight: 400;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  flex: 1;
-}
+@media screen and (width > 600px) {
+  .wrapper {
+    align-items: center;
+    justify-content: center;
+  }
 
-.panel {
-  max-width: 900px;
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  overflow: auto;
-  height: 100%;
-}
-
-@media screen and (width < 400px) {
   .panel {
-    flex-direction: column;
+    flex-direction: row;
+    border-radius: 30px;
+    margin: 20px;
+    height: unset;
   }
 
   .attribution {
-    display: none;
+    display: flex;
   }
 }
-
-
