@@ -1,0 +1,173 @@
+:root {
+  /*Primary*/
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /*Backgrounds*/
+  --bg-light-red: hsl(0, 100%, 95%);
+  --bg-orange-yellow: hsl(38, 100%, 95%);
+  --bg-green-teal: hsl(166, 100%, 95%);
+  --bg-cobalt-blue: hsl(232, 85%, 95%);
+
+  /*Gradients*/
+  --gradient-bg-light-slate-blue: hsl(252, 100%, 67%);
+  --gradient-bg-light-royal-blue: hsl(241, 81%, 54%);
+  --gradient-circle-violet-blue: hsla(256, 72%, 46%);
+  --gradient-circle-persian-blue: hsla(241, 72%, 46%);
+
+  --gradient-result-bg: linear-gradient(var(--gradient-bg-light-slate-blue), var(--gradient-bg-light-royal-blue));
+  --gradient-result-circle: linear-gradient(var(--gradient-circle-violet-blue), var(--gradient-circle-persian-blue));
+
+  /*Neutral*/
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavander: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /*Font*/
+  --paragraphe: 15px;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  src: local('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--light-gray);
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.attribution__text {
+  color: var(--grayish-blue);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.attribution__link {
+  color: var(--dark-blue);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.panel-result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--gradient-result-bg);
+  border-radius: 0 0 30px 30px;
+}
+
+.result-circle {
+  display: flex;
+  flex-direction: column;
+  background: var(--gradient-result-circle);
+}
+
+.panel-summaries {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  flex: 1;
+}
+
+#summaries-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.summary {
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  font-size: var(--paragraphe);
+  max-height: 20px;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--summary-text);
+  background-color: var(--summary-bg);
+}
+
+.summary--reaction {
+  --summary-text: var(--light-red);
+  --summary-bg: var(--bg-light-red);
+}
+
+.summary--memory {
+  --summary-text: var(--orange-yellow);
+  --summary-bg: var(--bg-orange-yellow);
+}
+
+.summary--verbal {
+  --summary-text: var(--green-teal);
+  --summary-bg: var(--bg-green-teal);
+}
+
+.summary--visual {
+  --summary-text: var(--cobalt-blue);
+  --summary-bg: var(--bg-cobalt-blue);
+}
+
+.my-button {
+  background-color: var(--dark-gray-blue);
+  color: white;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+}
+
+@media screen and (width < 400px) {
+  .attribution {
+    display: none;
+  }
+}
