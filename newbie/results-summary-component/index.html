@@ -3,37 +3,71 @@
 <head>
   <title>Frontend Mentor | Results summary component</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./index.css" rel="stylesheet">
+  <script src="./index.js" type="module" defer></script>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+<main>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <div class="wrapper">
 
-  Summary
+    <div class="panel">
 
-  Reaction
-  80 / 100
+      <div class="panel-result">
 
-  Memory
-  92 / 100
+        <span>Your Result</span>
 
-  Verbal
-  61 / 100
+        <div class="result-circle">
+          76
+          of 100
+        </div>
 
-  Visual
-  72 / 100
+        <span>Great</span>
 
-  Continue
+        <span>You scored higher than 65% of the people who have taken these tests.</span>
+      </div>
 
+      <div class="panel-summaries">
+
+        <div>
+          <span>Summary</span>
+        </div>
+
+        <div id="summaries-slot">
+
+          <div class="summary summary--reaction">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction" draggable="false">
+
+            <span>Reaction</span>
+
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+              <span>80 / 100</span>
+            </div>
+          </div>
+
+          <div class="summary summary--memory">
+            <img src="./assets/images/icon-memory.svg" alt="reaction" draggable="false">
+
+            <span>Memory</span>
+          </div>
+        </div>
+
+        <button class="my-button">
+          <span>Continue</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+</footer>
 </body>
 </html>
