@@ -1,0 +1,33 @@
+.summary {
+  padding: 16px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  font-size: var(--paragraphe);
+  max-height: 20px;
+  flex-direction: row;
+  flex: 1;
+  gap: 10px;
+  color: var(--summary-text);
+  background-color: var(--summary-bg);
+}
+
+.summary--Reaction {
+  --summary-text: var(--light-red);
+  --summary-bg: var(--bg-light-red);
+}
+
+.summary--Memory {
+  --summary-text: var(--orange-yellow);
+  --summary-bg: var(--bg-orange-yellow);
+}
+
+.summary--Verbal {
+  --summary-text: var(--green-teal);
+  --summary-bg: var(--bg-green-teal);
+}
+
+.summary--Visual {
+  --summary-text: var(--cobalt-blue);
+  --summary-bg: var(--bg-cobalt-blue);
+}

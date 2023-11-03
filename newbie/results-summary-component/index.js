@@ -1,11 +1,3 @@
-import summaries from './data.json';
+import { registerComponents } from './components/register-components';
 
-const slot = document.getElementById('summaries-slot');
-
-summaries.forEach((summary) => {
-
-  const div = document.createElement('div');
-  div.classList.add('summary-content');
-
-  slot.appendChild(div);
-});
+registerComponents();
