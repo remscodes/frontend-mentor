@@ -1,5 +1,5 @@
 import { registerComponents } from './components/register-components.js';
-import summariesData from './data.json';
+import summariesData from './data.js';
 
 function renderSummary() {
   const slot = document.getElementById('recaps-slot');
