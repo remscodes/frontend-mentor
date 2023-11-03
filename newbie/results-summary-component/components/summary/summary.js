@@ -23,7 +23,7 @@ export class Summary extends HTMLElement {
         <span>${this.category}</span>
   
         <div style="flex: 1; display: flex; justify-content: flex-end;">
-          <span>${this.score} / 100</span>
+          <span style="color: var(--dark-gray-blue);">${this.score} <span style="color: var(--light-lavander);">/ 100</span></span>
         </div>
       </div>
     `;
