@@ -8,8 +8,10 @@
 
   <link href="./styles/variables.css" rel="stylesheet">
   <link href="./styles/fonts.css" rel="stylesheet">
-  <link href="./components/result/result.css" rel="stylesheet">
-  <link href="./styles/index.css" rel="stylesheet">
+  <link href="./styles/result.css" rel="stylesheet">
+  <link href="./styles/summaries.css" rel="stylesheet">
+  <link href="./styles/button.css" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
 
   <script src="./index.js" type="module" defer></script>
 </head>
@@ -21,9 +23,30 @@
 
     <div class="panel">
 
-      <app-result></app-result>
+      <div class="panel-result">
 
-      <app-summaries></app-summaries>
+        <span>Your Result</span>
+
+        <div class="result-circle">
+          76
+          of 100
+        </div>
+
+        <span>Great</span>
+
+        <span>You scored higher than 65% of the people who have taken these tests.</span>
+      </div>
+
+      <div class="panel-summaries">
+
+        <span>Summary</span>
+
+        <div id="summaries-slot"></div>
+
+        <button class="my-button">
+          <span>Continue</span>
+        </button>
+      </div>
     </div>
   </div>
 </main>
