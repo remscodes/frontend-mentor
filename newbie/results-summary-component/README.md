@@ -25,14 +25,28 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: Use the local JSON data to dynamically populate the content
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+Desktop :
+
+<div align="center">
+
+![](./screenshots/desktop-design.png)
+
+</div>
+
+Mobile :
+
+<div align="center">
+
+![](./screenshots/mobile-design.png)
+
+</div> 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/remscodes/frontend-mentor-challenges/tree/main/newbie/results-summary-component)
+- Live Site URL: [GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/results-summary-component)
 
 ## My process
 
@@ -41,19 +55,14 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- JavaScript
 - Web Component
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will
-  use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd
-  recommend it to anyone still learning this concept.
+- Online Color Picker to find the proper background color of : https://www.w3schools.com/colors/colors_picker.asp
 
-https://www.w3schools.com/colors/colors_picker.asp
-
-Use font from `https://fonts.googleapis.com` instead of the one from `./assets`.
-
+- Use font from `https://fonts.googleapis.com` instead of the one from `./assets`. Add the following into index.html :
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +71,6 @@ Use font from `https://fonts.googleapis.com` instead of the one from `./assets`.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Rémy Abitbol](https://portfolio.rems.dev)
+- GitHub - [remscodes](https://github.com/remscodes)
+- Frontend Mentor - [@remscodes](https://www.frontendmentor.io/profile/remscodes)
