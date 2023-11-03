@@ -29,12 +29,12 @@ Users should be able to:
 <div style="display: flex; align-items: center; gap: 40px;">
 <div>
 
-![](./screenshots/desktop-screenshot_2023-11-03.png)
+<img src="./screenshots/desktop-screenshot_2023-11-03.png" alt="">
 
 </div>
 <div>
 
-![](./screenshots/mobile-screenshot_2023-11-03.png)
+<img src="./screenshots/mobile-screenshot_2023-11-03.png" alt="" width="600">
 
 </div>
 </div>
