@@ -1,0 +1,16 @@
+.panel-summaries {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  flex: 1;
+  padding: 30px;
+  gap: 20px;
+}
+
+#summaries-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  overflow: auto;
+}

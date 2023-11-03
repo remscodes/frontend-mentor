@@ -1,0 +1,13 @@
+.panel-result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--gradient-result-bg);
+  border-radius: 0 0 30px 30px;
+}
+
+.result-circle {
+  display: flex;
+  flex-direction: column;
+  background: var(--gradient-result-circle);
+}
