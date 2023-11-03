@@ -1,4 +1,4 @@
-import { registerComponents } from './components/register-components';
+import { registerComponents } from './components/register-components.js';
 import summariesData from './data.json';
 
 function renderSummary() {
