@@ -1,4 +1,4 @@
-export class Summary extends HTMLElement {
+export class Recap extends HTMLElement {
 
   static observedAttributes = ['category', 'score', 'icon'];
 
@@ -14,16 +14,16 @@ export class Summary extends HTMLElement {
   connectedCallback() {
     const shadow = this.attachShadow({ mode: 'open' });
     shadow.innerHTML = `
-      <link href="./components/summary/summary.css" type="text/css" rel="stylesheet">
+      <link href="./components/recap/recap.css" type="text/css" rel="stylesheet">
 
-      <div class="summary summary--${this.category}">
+      <div class="recap recap--${this.category}">
   
         <img src="${this.icon}" alt="${this.category}" draggable="false">
   
         <span>${this.category}</span>
   
-        <div style="flex: 1; display: flex; justify-content: flex-end;">
-          <span style="color: var(--dark-gray-blue);">${this.score} <span style="color: var(--light-lavander);">/ 100</span></span>
+        <div class="recap__score">
+          <span class="recap__score-current">${this.score} <span class="recap__score-total">/ 100</span></span>
         </div>
       </div>
     `;

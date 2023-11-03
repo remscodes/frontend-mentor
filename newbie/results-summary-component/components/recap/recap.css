@@ -1,0 +1,47 @@
+.recap {
+  padding: 16px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  font-size: var(--paragraphe);
+  max-height: 20px;
+  flex-direction: row;
+  flex: 1;
+  gap: 10px;
+  color: var(--recap-text);
+  background-color: var(--recap-bg);
+}
+
+.recap--Reaction {
+  --recap-text: var(--light-red);
+  --recap-bg: var(--bg-light-red);
+}
+
+.recap--Memory {
+  --recap-text: var(--orange-yellow);
+  --recap-bg: var(--bg-orange-yellow);
+}
+
+.recap--Verbal {
+  --recap-text: var(--green-teal);
+  --recap-bg: var(--bg-green-teal);
+}
+
+.recap--Visual {
+  --recap-text: var(--cobalt-blue);
+  --recap-bg: var(--bg-cobalt-blue);
+}
+
+.recap__score {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.recap__score-current {
+  color: var(--dark-gray-blue);
+}
+
+.recap__score-total {
+  color: #a3a3a3;
+}

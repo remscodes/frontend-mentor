@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
   <link href="./styles/variables.css" rel="stylesheet">
-  <link href="./styles/fonts.css" rel="stylesheet">
   <link href="./styles/result.css" rel="stylesheet">
-  <link href="./styles/summaries.css" rel="stylesheet">
+  <link href="styles/summary.css" rel="stylesheet">
   <link href="./styles/button.css" rel="stylesheet">
   <link href="./index.css" rel="stylesheet">
 
@@ -25,23 +28,33 @@
 
       <div class="panel-result">
 
-        <span>Your Result</span>
+        <span class="result-title">Your Result</span>
 
         <div class="result-circle">
-          76
-          of 100
+
+          <div class="result-circle__content">
+
+            <span class="score">76</span>
+
+            <span class="score-limit">of 100</span>
+          </div>
         </div>
 
-        <span>Great</span>
+        <div class="result-content">
 
-        <span>You scored higher than 65% of the people who have taken these tests.</span>
+          <span class="result-sub-title">Great</span>
+
+          <div class="result-text">
+            <span>You scored higher than 65% of the people who have taken these tests.</span>
+          </div>
+        </div>
       </div>
 
-      <div class="panel-summaries">
+      <div class="panel-summary">
 
-        <span>Summary</span>
+        <span style="font-size: 17px;">Summary</span>
 
-        <div id="summaries-slot"></div>
+        <div id="recaps-slot"></div>
 
         <button class="my-button">
           <span>Continue</span>
