@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   background: var(--gradient-result-bg);
   color: var(--light-lavander);
@@ -56,7 +57,7 @@
 
 .result-sub-title {
   color: white;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 500;
 }
 
@@ -65,4 +66,15 @@
   opacity: 0.8;
   text-align: center;
   line-height: 1.4;
+}
+
+@media screen and (width > 600px) {
+  .panel-result {
+    border-radius: 30px;
+    flex: 1;
+  }
+
+  .result-text {
+    margin: 0 10px;
+  }
 }
