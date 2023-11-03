@@ -1,7 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to
-the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -27,21 +26,18 @@ Users should be able to:
 
 ### Screenshots
 
-Desktop :
+<div style="display: flex; align-items: center; gap: 40px;">
+<div>
 
-<div align="center">
-
-![](./screenshots/desktop-design.png)
+![](./screenshots/desktop-screenshot_2023-11-03.png)
 
 </div>
+<div>
 
-Mobile :
+![](./screenshots/mobile-screenshot_2023-11-03.png)
 
-<div align="center">
-
-![](./screenshots/mobile-design.png)
-
-</div> 
+</div>
+</div>
 
 ### Links
 
@@ -63,6 +59,7 @@ Mobile :
 - Online Color Picker to find the proper background color of : https://www.w3schools.com/colors/colors_picker.asp
 
 - Use font from `https://fonts.googleapis.com` instead of the one from `./assets`. Add the following into index.html :
+
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
