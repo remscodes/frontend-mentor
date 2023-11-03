@@ -1,18 +1,15 @@
 import { registerComponents } from './components/register-components';
 import summariesData from './data.json';
 
-function renderSummaries() {
-  const slot = document.getElementById('summaries-slot');
+function renderSummary() {
+  const slot = document.getElementById('recaps-slot');
 
-  summariesData.forEach((summaryData) => {
-    const staticSummary = document.createElement('app-summary');
-    staticSummary.setAttribute('category', summaryData.category)
-    staticSummary.setAttribute('score', summaryData.score)
-    staticSummary.setAttribute('icon', summaryData.icon)
-
-    slot.appendChild(staticSummary);
+  summariesData.forEach((props) => {
+    const recap = document.createElement('app-recap');
+    Object.assign(recap, props);
+    slot.appendChild(recap);
   });
 }
 
 registerComponents();
-renderSummaries();
+renderSummary();

@@ -14,14 +14,19 @@
   /*Gradients*/
   --gradient-bg-light-slate-blue: hsl(252, 100%, 67%);
   --gradient-bg-light-royal-blue: hsl(241, 81%, 54%);
-  --gradient-circle-violet-blue: hsla(256, 72%, 46%);
-  --gradient-circle-persian-blue: hsla(241, 72%, 46%);
+  --gradient-circle-violet-blue: hsla(256, 72%, 46%, 1);
+  --gradient-circle-persian-blue: hsla(241, 72%, 46%, 0);
 
-  --gradient-result-bg: linear-gradient(var(--gradient-bg-light-slate-blue), var(--gradient-bg-light-royal-blue));
-  --gradient-result-circle: linear-gradient(var(--gradient-circle-violet-blue), var(--gradient-circle-persian-blue));
+  --gradient-result-bg: linear-gradient(
+          var(--gradient-bg-light-slate-blue),
+          var(--gradient-bg-light-royal-blue)
+  );
+  --gradient-result-circle: linear-gradient(
+          var(--gradient-circle-violet-blue),
+          var(--gradient-circle-persian-blue)
+  );
 
   /*Neutral*/
-  --pale-blue: hsl(221, 100%, 96%);
   --light-lavander: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 

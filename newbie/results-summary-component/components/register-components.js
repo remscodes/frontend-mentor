@@ -1,5 +1,5 @@
-import { Summary } from './summary/summary';
+import { Recap } from './recap/recap';
 
 export function registerComponents() {
-  customElements.define('app-summary', Summary);
+  customElements.define('app-recap', Recap);
 }
