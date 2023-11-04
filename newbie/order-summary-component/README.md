@@ -23,18 +23,14 @@ Users should be able to:
 ### Screenshots
 
 <div style="display: flex; align-items: center; gap: 40px;">
-<div>
-
 <div align="center">
+
 <img src="./screenshots/desktop-screenshot_2023-11-04.png" alt="">
-</div>
 
 </div>
-<div>
-
 <div align="center">
+
 <img src="./screenshots/mobile-screenshot_2023-11-04.png" alt="" width="600">
-</div>
 
 </div>
 </div>
