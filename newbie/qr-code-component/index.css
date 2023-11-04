@@ -29,7 +29,7 @@ main {
   flex-direction: column;
 }
 
-.card--wrapper {
+.card-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
