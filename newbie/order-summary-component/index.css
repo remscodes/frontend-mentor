@@ -197,12 +197,24 @@ main {
     max-width: 400px;
   }
 
-  .card__title {
-    font-size: 24px;
+  .card__content {
+    padding: 10px 30px;
   }
 
-  .card__content {
-    padding: 20px 30px;
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
+
+  .offer__plan {
+    font-size: 14px;
+  }
+
+  .my-button {
+    font-size: 15px;
   }
 
   .attribution {
