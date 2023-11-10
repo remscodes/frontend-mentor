@@ -72,7 +72,7 @@ function getById(id) {
 
 /** @param {HTMLElement} element */
 function display(element) {
-  element.style.display = 'block';
+  element.style.display = 'flex';
 }
 
 /** @param {HTMLElement} element */
