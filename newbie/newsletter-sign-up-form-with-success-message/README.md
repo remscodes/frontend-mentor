@@ -28,15 +28,21 @@ Users should be able to:
 
 ### Screenshot
 
-<div style="display: flex; align-items: center; gap: 40px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
 <div align="center">
 
-<img src="./screenshots/desktop-screenshot_2023-11-04.png" alt="">
+<img src="./screenshots/desktop-screenshot_2023-11-10.png" alt="">
+<img src="./screenshots/desktop-screenshot-success_2023-11-10.png" alt="">
 
 </div>
 <div align="center">
 
-<img src="./screenshots/mobile-screenshot_2023-11-04.png" alt="" width="600">
+<img src="./screenshots/mobile-screenshot_2023-11-10.png" alt="" width="600">
+
+</div>
+<div align="center">
+
+<img src="./screenshots/mobile-screenshot-success_2023-11-10.png" alt="" width="600">
 
 </div>
 </div>
