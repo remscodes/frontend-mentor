@@ -13,7 +13,7 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
   - [Results summary component](./newbie/results-summary-component) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/results-summary-component))
   - [Order summary component](./newbie/order-summary-component) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/order-summary-component))
 - Junior
-  - [Newsletter sign-up form with success message](./newbie/newsletter-sign-up-form-with-success-message) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/newsletter-sign-up-form-with-success-message))
+  - [Newsletter sign-up form with success message](./junior/newsletter-sign-up-form-with-success-message) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/newsletter-sign-up-form-with-success-message))
 - Intermediate
 - Advanced
 - Guru
