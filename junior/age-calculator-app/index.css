@@ -16,7 +16,7 @@ body {
   height: 100%;
   margin: 0;
   background-color: var(--off-white);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -26,15 +26,11 @@ img {
 }
 
 input {
-  /* Chrome, Safari, Edge, Opera */
-
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-
-  /* Firefox */
 
   &[type=number] {
     -moz-appearance: textfield;
@@ -58,8 +54,9 @@ main {
 }
 
 .panel {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  width: 100%;
   max-width: 700px;
   border-radius: 20px 20px 160px;
   padding: 50px;
@@ -81,7 +78,7 @@ main {
   flex-direction: column;
   gap: 10px;
 
-  & label:not(.form-error) {
+  & label {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -103,6 +100,7 @@ main {
 .form-border {
   position: relative;
   display: flex;
+  width: 700px;
   flex-direction: row;
   justify-content: flex-end;
 
@@ -154,10 +152,10 @@ main {
   font-size: 80px;
   font-weight: 800;
   font-style: italic;
+  line-height: 1.2;
 }
 
 .output {
-  letter-spacing: 10px;
   color: var(--purple);
 }
 

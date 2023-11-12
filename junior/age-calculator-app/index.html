@@ -28,19 +28,19 @@
 
           <div id="day-field" class="form-field">
             <label for="day">DAY</label>
-            <input type="number" id="day" name="day" placeholder="DD" required min="1" max="31">
+            <input type="number" id="day" name="day" placeholder="DD" required min="1" max="31" autocomplete="off">
             <span id="day-error-msg" class="form-error"></span>
           </div>
 
           <div id="month-field" class="form-field">
             <label for="month">MONTH</label>
-            <input type="number" id="month" name="month" placeholder="MM" required min="1" max="12">
+            <input type="number" id="month" name="month" placeholder="MM" required min="1" max="12" autocomplete="off">
             <span id="month-error-msg" class="form-error"></span>
           </div>
 
           <div id="year-field" class="form-field">
             <label for="year">YEAR</label>
-            <input type="number" id="year" name="year" placeholder="YYYY" required min="1">
+            <input type="number" id="year" name="year" placeholder="YYYY" required min="1" autocomplete="off">
             <span id="year-error-msg" class="form-error"></span>
           </div>
         </div>
@@ -54,11 +54,11 @@
 
       <div class="result">
 
-        <span><span id="years-result" class="output">--</span>years</span>
+        <span><span id="years-result" class="output">- -</span> years</span>
 
-        <span><span id="months-result" class="output">--</span>months</span>
+        <span><span id="months-result" class="output">- -</span> months</span>
 
-        <span><span id="days-result" class="output">--</span>days</span>
+        <span><span id="days-result" class="output">- -</span> days</span>
       </div>
     </div>
   </div>
