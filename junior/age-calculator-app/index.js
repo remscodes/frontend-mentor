@@ -36,8 +36,29 @@ form.addEventListener('submit', function (ev) {
   const month = monthInput.value;
   const year = yearInput.value;
 
-  console.log({ day, month, year })
+  const date = new Date();
+  date.setFullYear(year);
+  date.setMonth(month - 1, day);
+
+  const { days, months, years } = dateDiff(date);
+
+  getById('years-result').innerText = `${years}`;
+  getById('months-result').innerText = `${months}`;
+  getById('days-result').innerText = `${days}`;
 });
+
+function dateDiff(date) {
+  const diffMs = new Date().getTime() - date.getTime();
+
+  const oneDayMs = 1000 * 60 * 60 * 24;
+  const diffDays = diffMs / oneDayMs;
+
+  return {
+    years: Math.floor(diffDays / 365),
+    months: Math.floor((diffDays % 365) / 30.44),
+    days: Math.floor((diffDays % 365) % 30.44)
+  };
+}
 
 function inspectError(ctx, key) {
   ctx.addEventListener('invalid', function (ev) {
@@ -52,7 +73,7 @@ function inspectError(ctx, key) {
 
     getById(`${key}-field`).classList.add('invalid-state');
 
-    ctx.addEventListener('input', function () {
+    this.addEventListener('input', function () {
       getById(`${key}-field`).classList.remove('invalid-state');
       span.innerText = '';
     }, { once: true });
