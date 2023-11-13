@@ -44,11 +44,27 @@ main {
   flex-direction: column;
 }
 
+input {
+  display: block;
+  padding: 10px 20px;
+  max-width: 160px;
+  width: 100%;
+  color: var(--grey);
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  box-sizing: border-box;
+
+  &:hover, &:focus {
+    border: 1px solid var(--purple);
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   flex: 1;
   z-index: 1;
 }
@@ -66,6 +82,7 @@ main {
 #my-form {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
 }
 
 .form-fields {
@@ -84,23 +101,11 @@ main {
     letter-spacing: 4px;
     color: var(--smokey-grey);
   }
-
-  & input {
-    display: block;
-    font-size: 32px;
-    color: var(--grey);
-    width: 100px;
-    padding: 10px 20px;
-    font-weight: 700;
-    border: 1px solid var(--light-grey);
-    border-radius: 8px;
-  }
 }
 
 .form-border {
   position: relative;
   display: flex;
-  width: 700px;
   flex-direction: row;
   justify-content: flex-end;
 
@@ -181,11 +186,38 @@ main {
 }
 
 @media screen and (width < 600px) {
-  .attribution {
-    display: none;
+  input {
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+
+  .panel {
+    padding: 50px 20px;
+  }
+
+  .form-fields {
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .form-field {
+    flex: 1;
   }
 
   .form-border {
     justify-content: center;
+    margin: 20px 0;
+
+    & button {
+      padding: 10px;
+    }
+  }
+
+  .result {
+    font-size: 50px;
+  }
+
+  .attribution {
+    display: none;
   }
 }
