@@ -14,6 +14,7 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
   - [Order summary component](./newbie/order-summary-component) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/order-summary-component))
 - Junior
   - [Newsletter sign-up form with success message](./junior/newsletter-sign-up-form-with-success-message) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/newsletter-sign-up-form-with-success-message))
+  - [Age calculator app](./junior/age-calculator-app) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/age-calculator-app))
 - Intermediate
 - Advanced
 - Guru
