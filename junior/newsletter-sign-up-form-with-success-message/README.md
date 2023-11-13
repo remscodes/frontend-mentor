@@ -6,7 +6,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,7 +26,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
 <div align="center">
@@ -37,20 +37,20 @@ Users should be able to:
 </div>
 <div align="center">
 
-<img src="./screenshots/mobile-screenshot_2023-11-10.png" alt="" width="600">
+<img src="./screenshots/mobile-screenshot_2023-11-10.png" alt="" width="300">
 
 </div>
 <div align="center">
 
-<img src="./screenshots/mobile-screenshot-success_2023-11-10.png" alt="" width="600">
+<img src="./screenshots/mobile-screenshot-success_2023-11-10.png" alt="" width="300">
 
 </div>
 </div>
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/remscodes/frontend-mentor-challenges/tree/main/newbie/newsletter-sign-up-form-with-success-message)
-- Live Site URL: [GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/newbie/newsletter-sign-up-form-with-success-message)
+- Solution URL: [GitHub](https://github.com/remscodes/frontend-mentor-challenges/tree/main/junior/newsletter-sign-up-form-with-success-message)
+- Live Site URL: [GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/newsletter-sign-up-form-with-success-message)
 
 ## My process
 
