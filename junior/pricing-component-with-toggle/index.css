@@ -113,12 +113,28 @@ main {
 
     & .learn-more {
       color: white;
-      border: 1px solid white;
-      background-image: var(--button-gradient);
+      z-index: 1;
+      border: 1px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+      var(--button-gradient) border-box;
+      border-radius: 6px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        transition: opacity 200ms;
+        background-image: var(--button-gradient);
+      }
 
       &:hover {
+        background-color: white;
         color: var(--purple-dark);
-        border: 1px solid var(--purple-dark);
       }
     }
 
@@ -136,7 +152,7 @@ main {
   &:nth-child(even) { /*Professional*/
     background-image: var(--card-gradient);
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
-    z-index: 20;
+    z-index: 1;
 
     & span {
       color: var(--very-light-grayish-blue);
@@ -214,7 +230,6 @@ main {
 
 .learn-more {
   margin-top: 20px;
-  width: 100%;
   padding: 10px 20px;
   border-radius: 6px;
   text-transform: uppercase;
@@ -222,9 +237,15 @@ main {
   letter-spacing: 1px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+  position: relative;
 
   &:hover {
-    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  &:hover::before {
+    opacity: 0;
   }
 }
 
@@ -240,7 +261,7 @@ main {
   left: 0;
 }
 
-@media screen and (width < 720px) {
+@media screen and (width < 800px) {
   .offers {
     flex-direction: column;
     align-items: center;

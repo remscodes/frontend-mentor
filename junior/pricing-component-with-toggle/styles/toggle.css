@@ -16,6 +16,11 @@
       right: 0;
       background: var(--button-gradient);
       border-radius: 20px;
+      transition: filter 200ms;
+
+      &:hover {
+        filter: opacity(0.65);
+      }
 
       &::before {
         content: "";
