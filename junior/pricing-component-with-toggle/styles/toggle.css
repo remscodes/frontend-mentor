@@ -1,0 +1,38 @@
+.toggle-switch {
+  position: relative;
+  width: 54px;
+  height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+
+  & input {
+    display: none;
+
+    & + span {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--button-gradient);
+      border-radius: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4px;
+        width: 22px;
+        height: 22px;
+        background: white;
+        border-radius: 50%;
+        transition: all 300ms;
+      }
+    }
+
+    &:checked + span::before {
+      left: 28px;
+    }
+  }
+}

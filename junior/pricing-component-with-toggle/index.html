@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
   <link href="./index.css" rel="stylesheet" type="text/css">
+  <link href="./styles/attribution.css" rel="stylesheet" type="text/css">
+  <link href="./styles/toggle.css" rel="stylesheet" type="text/css">
+  <link href="./styles/has-support.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -26,7 +29,7 @@
 
         <span>Annually</span>
 
-        <label class="switch">
+        <label class="toggle-switch">
           <input type="checkbox" id="choice">
           <span></span>
         </label>
@@ -40,9 +43,15 @@
 
           <span class="offer__title">Basic</span>
 
-          <span class="offer__price offer__price--monthly">&dollar;19.99</span>
+          <span class="offer__price offer__price--monthly">
+            <span class="dollar">&dollar;</span>
+            <span>19.99</span>
+          </span>
 
-          <span class="offer__price offer__price--annually">&dollar;199.99</span>
+          <span class="offer__price offer__price--annually">
+            <span class="dollar">&dollar;</span>
+            <span>199.99</span>
+          </span>
 
           <div class="offer__desc">
 
@@ -60,9 +69,15 @@
 
           <span class="offer__title">Professional</span>
 
-          <span class="offer__price offer__price--monthly">&dollar;24.99</span>
+          <span class="offer__price offer__price--monthly">
+            <span class="dollar">&dollar;</span>
+            <span>24.99</span>
+          </span>
 
-          <span class="offer__price offer__price--annually">&dollar;249.99</span>
+          <span class="offer__price offer__price--annually">
+            <span class="dollar">&dollar;</span>
+            <span>249.99</span>
+           </span>
 
           <div class="offer__desc">
 
@@ -80,9 +95,15 @@
 
           <span class="offer__title">Master</span>
 
-          <span class="offer__price offer__price--monthly">&dollar;39.99</span>
+          <span class="offer__price offer__price--monthly">
+            <span class="dollar">&dollar;</span>
+            <span>39.99</span>
+          </span>
 
-          <span class="offer__price offer__price--annually">&dollar;399.99</span>
+          <span class="offer__price offer__price--annually">
+            <span class="dollar">&dollar;</span>
+            <span>399.99</span>
+          </span>
 
           <div class="offer__desc">
 
@@ -98,6 +119,9 @@
       </div>
     </div>
   </div>
+
+  <img id="bg-top" src="./images/bg-top.svg" alt="" draggable="false">
+  <img id="bg-bottom" src="./images/bg-bottom.svg" alt="" draggable="false">
 </main>
 
 <footer>
