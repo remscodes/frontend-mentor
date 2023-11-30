@@ -19,7 +19,7 @@
   font-weight: 400;
 }
 
-@media screen  and (width < 885px) {
+@media screen and (width < 800px) {
   .attribution {
     display: none;
   }
