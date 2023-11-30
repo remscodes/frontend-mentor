@@ -15,6 +15,7 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
 - Junior
   - [Newsletter sign-up form with success message](./junior/newsletter-sign-up-form-with-success-message) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/newsletter-sign-up-form-with-success-message))
   - [Age calculator app](./junior/age-calculator-app) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/age-calculator-app))
+  - [Pricing component with toggle](./junior/pricing-component-with-toggle) ([GitHub Pages](https://remscodes.github.io/frontend-mentor-challenges/junior/pricing-component-with-toggle))
 - Intermediate
 - Advanced
 - Guru
