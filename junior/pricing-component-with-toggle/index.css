@@ -51,6 +51,7 @@ main {
 .panel {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 40px 20px;
@@ -85,7 +86,8 @@ main {
 .offers {
   display: flex;
   flex-direction: row;
-  flex: 1;
+  justify-content: center;
+  width: 100%;
 }
 
 .offer {
@@ -97,7 +99,8 @@ main {
   padding: 30px;
   font-size: 15px;
   border-radius: 10px;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
 
   &:nth-child(odd) { /*Basic and Master*/
     background-color: white;
@@ -237,9 +240,10 @@ main {
   left: 0;
 }
 
-@media screen and (width < 885px) {
+@media screen and (width < 720px) {
   .offers {
     flex-direction: column;
+    align-items: center;
   }
 
   .offer {
