@@ -1,0 +1,26 @@
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.attribution__text {
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.attribution__link {
+  color: var(--purple-dark);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media screen  and (width < 885px) {
+  .attribution {
+    display: none;
+  }
+}
