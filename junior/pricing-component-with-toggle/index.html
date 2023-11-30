@@ -1,52 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Frontend Mentor | Pricing component with toggle</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link href="./index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-  Our Pricing
-  Annually
-  Monthly
+<main>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+  <div class="wrapper">
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+    <div class="panel">
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <span>Our Pricing</span>
+
+      <div class="payment-type">
+
+        <span>Annually</span>
+
+        <label class="switch">
+          <input type="checkbox" id="choice">
+          <span></span>
+        </label>
+
+        <span>Monthly</span>
+      </div>
+
+      <div class="offers">
+
+        <div class="offer">
+
+          <span class="offer__title">Basic</span>
+
+          <span class="offer__price offer__price--monthly">&dollar;19.99</span>
+
+          <span class="offer__price offer__price--annually">&dollar;199.99</span>
+
+          <div class="offer__desc">
+
+            <span class="desc__content">500 GB Storage</span>
+
+            <span class="desc__content">2 Users Allowed</span>
+
+            <span class="desc__content">Send up to 3 GB</span>
+          </div>
+
+          <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="offer">
+
+          <span class="offer__title">Professional</span>
+
+          <span class="offer__price offer__price--monthly">&dollar;24.99</span>
+
+          <span class="offer__price offer__price--annually">&dollar;249.99</span>
+
+          <div class="offer__desc">
+
+            <span class="desc__content">1 TB Storage</span>
+
+            <span class="desc__content">5 Users Allowed</span>
+
+            <span class="desc__content">Send up to 10 GB</span>
+          </div>
+
+          <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="offer">
+
+          <span class="offer__title">Master</span>
+
+          <span class="offer__price offer__price--monthly">&dollar;39.99</span>
+
+          <span class="offer__price offer__price--annually">&dollar;399.99</span>
+
+          <div class="offer__desc">
+
+            <span class="desc__content">2 TB Storage</span>
+
+            <span class="desc__content">10 Users Allowed</span>
+
+            <span class="desc__content">Send up to 20 GB</span>
+          </div>
+
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+    </div>
   </div>
+</main>
+
+<footer>
+  <div class="attribution">
+
+    <span class="attribution__text">Challenge by <a class="attribution__link"
+                                                    href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+
+    <span class="attribution__text">Coded by <a class="attribution__link" href="https://github.com/remscodes"
+                                                target="_blank">Rémy Abitbol</a>.</span>
+  </div>
+
+  <small>It <a href="https://caniuse.com/css-has" target="_blank">requires a browser that
+    supports<code>:has()</code></a> (try Chrome).</small>
+</footer>
 </body>
 </html>
